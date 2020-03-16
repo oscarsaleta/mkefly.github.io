@@ -1,34 +1,4 @@
----
-layout: home
-title: Home
-landing-title: 'COVID-19 Statistics and Research'
-description: 'This website aims to help increase the public’s understanding of the evolving COVID-19.'
-image: null
-author: 'Miquel Oliver'
-show_tile: true
----
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script type="text/javascript"
-  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<style>
-.top-buffer { margin-top:100px; }
-
- .grid {
-  display: flex;
- }
-.col-1-2 {
-  flex: 1;
-  margin-left: 20px;
-}
-.cole-1-2:last-child {
-  margin-left: 0px;
-}
-</style>
-
-<!-- Main -->
+I"B.<!-- Main -->
 <div id="main">
 <!-- 	<header class="major">
 	    <h2>Sed amet aliquam</h2>
@@ -44,7 +14,7 @@ show_tile: true
 	<section>
     <div class="content">
 		<div>
-			<img src="{% link assets/images/pic08.jpg %}" alt="" data-position="center center" />
+			<img src="/forty-jekyll-theme/assets/images/pic08.jpg" alt="" data-position="center center" />
 		</div>
         </div>
 		<div class="content">
@@ -70,6 +40,20 @@ show_tile: true
 	</section>
 </section>
 
+<style>
+.top-buffer { margin-top:100px; }
+
+ .grid {
+  display: flex;
+ }
+.col-1-2 {
+  flex: 1;
+  margin-left: 20px;
+}
+.cole-1-2:last-child {
+  margin-left: 0px;
+}
+</style>
 
 <div class="row top-buffer"></div>
 
@@ -77,10 +61,10 @@ show_tile: true
 	<section>
     	<div class="inner">
         <header class="major">
+        <h5>Text from: <a href=" https://www.khanacademy.org/science/biology/ecology/population-growth-and-regulation/a/exponential-logistic-growth">khanacademy</a></h5> 
 			<h3>The death evalution simulations:</h3>
 		</header>
-        <h5>*Text from: <a href=" https://www.khanacademy.org/science/biology/ecology/population-growth-and-regulation/a/exponential-logistic-growth">khanacademy</a>*</h5> 
-        <h3>Exponential & logistic growth</h3>
+        <h5>Exponential &amp; logistic growth</h5>
         <p>In exponential growth, a population's per capita (per individual) growth rate stays the same regardless of population size, making the population grow faster and faster as it gets larger.</p>
         <ul>
         <li>In nature, populations may grow exponentially for some period, but they will ultimately be limited by resource availability.</li>
@@ -95,28 +79,18 @@ show_tile: true
 
 <p>Population ecologists use a variety of mathematical methods to model population dynamics (how populations change in size and composition over time). Some of these models represent growth without environmental constraints, while others include "ceilings" determined by limited resources. Mathematical models of populations can be used to accurately describe changes occurring in a population and, importantly, to predict future changes.</p>    
 		<div class="image">
-			<img src="{% link assets/images/cartoon_exp_log.png %}" alt="" data-position="center center" />
+			<img src="/forty-jekyll-theme/assets/images/cartoon_exp_log.png" alt="" data-position="center center" />
             <p>*end of the <a href=" https://www.khanacademy.org/science/biology/ecology/population-growth-and-regulation/a/exponential-logistic-growth">khanacademy</a> citation*</p>
-        		</div>
-	    </div>
             <p>The figure above shows how the logistic and exponential models are constructed. After reading this text it should be obvious to us that the growth of the virus cannot be exponential indefinitely and therefore we will use a logistic model to predict the number of deaths.</p>
-            <h3>The logistic function:</h3>
-        <p>If we solve the equation on the right of the previous figure, we obtain the logistic function. A logistic function or logistic curve is a common "S" shape this type of curve is known as a sigmoid and the equation as follows:</p>
-        $$f(t) = \frac{K}{1 + e^{-r(t-t_0)}}.$$
-        <ul> 
-        <li> $e$ = the natural logarithm base (also known as Euler's number),</li>
-        <li> $t_0$ = the $t$-value of the sigmoid where the rate starts to decreas, at the same time this point is the midpoint of the sigmoid's evolution,</li>
-        <li> $K$ = the curve's maximum value; in this case the maximum number of deaths and</li>
-        <li> $r$ = the logistic growth rate or steepness of the curve</li>
-        </ul>   
-        <h3>The simulations:</h3>
-        <p>...</p>
+            <h5>The logistic model:</h5>
+		</div>
+	    </div>
 		<div class="image">
-			<img src="{% link assets/images/Sigmoid-simulation-linear.png %}" alt="" data-position="center center" />
+			<img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-linear.png" alt="" data-position="center center" />
             <p>.....</p>
 		</div>
         <div class="image">
-			<img src="{% link assets/images/Sigmoid-simulation-log.png %}" alt="" data-position="center center" />
+			<img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-log.png" alt="" data-position="center center" />
             <p>.....</p>
 		</div>
 	</section>
@@ -142,7 +116,7 @@ show_tile: true
         </div>
     </div>
     <div class="content">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Kas0tIxDvrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Kas0tIxDvrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
         </div>
 	</section>
 </section>
@@ -166,7 +140,7 @@ show_tile: true
         Variational inference is a great approach for doing really complex, often intractable Bayesian inference in approximate form. Common methods (e.g. ADVI) lack from complexity so that approximate posterior does not reveal the true nature of underlying problem. In some applications it can yield unreliable decisions.
         </p>
         <h4>Method used - Variational Inference - OPVI:</h4>
-        <h5>*Text from: <a href=" https://docs.pymc.io/api/inference.html"> https://docs.pymc.io/api/inference.html</a>*</h5> 
+        <h5>Text from: <a href=" https://docs.pymc.io/api/inference.html"> https://docs.pymc.io/api/inference.html</a></h5> 
             <p>
             Variational inference is a great approach for doing really complex, often intractable Bayesian inference in approximate form. Common methods (e.g. ADVI) lack from complexity so that approximate posterior does not reveal the true nature of underlying problem. In some applications it can yield unreliable decisions.
             </p>
@@ -189,15 +163,15 @@ show_tile: true
     <div class="col-1-2">
        <div class="content">
            		<div class="image">
-			<img src="{% link assets/images/parameters-c3-c1.png %}" alt="" data-position="center center" width="400"/>
+			<img src="/forty-jekyll-theme/assets/images/parameters-c3-c1.png" alt="" data-position="center center" width="400" />
             <p>.............................................................................</p>
 		</div>
         <div class="image">
-			<img src="{% link assets/images/parameters-c3-c2.png %}" alt="" data-position="center center" width="400"/>
+			<img src="/forty-jekyll-theme/assets/images/parameters-c3-c2.png" alt="" data-position="center center" width="400" />
             <p>.............................................................................</p>
 		</div>
         <div class="image">
-			<img src="{% link assets/images/parameters-c1-c2.png %}" alt="" data-position="center center" width="400"/>
+			<img src="/forty-jekyll-theme/assets/images/parameters-c1-c2.png" alt="" data-position="center center" width="400" />
             <p>.............................................................................</p>
 		</div>
        </div>
@@ -222,7 +196,7 @@ show_tile: true
         </div>
     </div>
     <div class="content">     
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/R13BD8qKeTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/R13BD8qKeTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
         </div>
 	</section>
 </section>
@@ -238,20 +212,22 @@ show_tile: true
         <p>.....</p>
 	    </div>
 		<div class="image">
-			<img src="{% link assets/images/Growth-China.png %}" alt="" data-position="center center" width="500"/>
+			<img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="500" />
             <p>.....</p>
 		</div>
         <div class="image">
-			<img src="{% link assets/images/Growth-Iran.png %}" alt="" data-position="center center" width="500"/>
+			<img src="/forty-jekyll-theme/assets/images/Growth-Iran.png" alt="" data-position="center center" width="500" />
             <p>.....</p>
 		</div>
         <div class="image">
-			<img src="{% link assets/images/Growth-Italy.png %}" alt="" data-position="center center" width="500"/>
+			<img src="/forty-jekyll-theme/assets/images/Growth-Italy.png" alt="" data-position="center center" width="500" />
             <p>.....</p>
 		</div>
         <div class="image">
-			<img src="{% link assets/images/Growth-Spain.png %}" alt="" data-position="center center" width="500"/>
+			<img src="/forty-jekyll-theme/assets/images/Growth-Spain.png" alt="" data-position="center center" width="500" />
             <p>.....</p>
 		</div>
 	</section>
 </section>
+</div>
+:ET
