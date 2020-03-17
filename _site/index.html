@@ -80,7 +80,8 @@
                     <h1>Coronavirus mortality estimates</h1>
                 </header>
                 <h2>Description</h2>
-                <p>This study will focus on the number of deaths as it is a more robust value given that it as easily subject to the different rate of testing between countries. More over we are only going to estimate the mortality evolution for countries with at least 300 cases. The next table shows the data for this countris.</p>
+                <p>This study will focus on the number of deaths as it is a more robust value given that it as easily subject to the different rate of testing between countries. 
+                    More over we are only going to estimate the mortality evolution for countries with at least 300 cases.</p>
                 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
@@ -133,6 +134,19 @@ function includeHTML() {
 }
 </script>
 
+<!-- Always get the latest version -->
+<!-- Not recommended for production sites! -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get minor updates and patch fixes within a major version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get patch fixes within a minor version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get a specific version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
 <!-- Main -->
 <div id="main">
 <!-- 	<header class="major">
@@ -142,7 +156,8 @@ function includeHTML() {
 	<div class="inner">
         <h3>The Data:</h3>
 	</div>
-
+<p>The following table contains the number of deaths in each country, the number of days since the first official report of death, the growth rate to the previous day; this corresponds to $(Today-Yesterday)/Yesterday$ and the growth factor we will discuss more about it in a future section.</p>
+<div class="row top-buffer"></div>
 <div w3-include-html="tabledata.html"></div>
 <script>
 includeHTML();
@@ -190,30 +205,34 @@ includeHTML();
         <header class="major">
 			<h3>The death evalution simulations:</h3>
 		</header>
-        <h5>*Text from: <a href=" https://www.khanacademy.org/science/biology/ecology/population-growth-and-regulation/a/exponential-logistic-growth">khanacademy</a>*</h5> 
+
         <h3>Exponential &amp; logistic growth</h3>
-        <p>In exponential growth, a population's per capita (per individual) growth rate stays the same regardless of population size, making the population grow faster and faster as it gets larger.</p>
+        <p>Exponential growth means that a given population will grow its size according to a growth rate. In the case of exponential growth this rate stays the same regardless of the population size, inducing the population to grow faster and faster as it gets larger, without an end.</p>
         <ul>
-        <li>In nature, populations may grow exponentially for some period, but they will ultimately be limited by resource availability.</li>
-        <li>In logistic growth, a population's per capita growth rate gets smaller and smaller as population size approaches a maximum imposed by limited resources in the environment, known as the carrying capacity (KKK).</li>
+        <li>In nature, populations can only grow exponentially during some period, but inevitably the growth rate will ultimately be limited for example by the resource availability.</li>
+        <li>In logistic growth, the population growth rate gets smaller and smaller as population size approaches a maximum. This maximum is in esence a product of over population limiting population's resources.</li>
         <li>Exponential growth produces a J-shaped curve, while logistic growth produces an S-shaped curve.</li>
+        <li>When we read about bending the curve we are talking about using a logaritmic scale to plot the data, in that case that J-shaped curve becomes a strait line. The moment when this straight line bends downwards we start seeing the limiting factors and we are at close to the center of the S-shaped curve, that in this case looks like an inverse J-shape. (Remember this is only a matter of how the data is plotted or shown, it does not affect the data it self).</li>
         </ul>        
         <h5>Introduction</h5>
 
+
+<h5>*Text from: <a href=" https://www.khanacademy.org/science/biology/ecology/population-growth-and-regulation/a/exponential-logistic-growth">khanacademy</a>*</h5> 
 <p>In theory, any kind of organism could take over the Earth just by reproducing. For instance, imagine that we started with a single pair of male and female rabbits. If these rabbits and their descendants reproduced at top speed ("like bunnies") for 777 years, without any deaths, we would have enough rabbits to cover the entire state of Rhode Island start superscript, 1, comma, 2, comma, 3, end superscript. And that's not even so impressive – if we used E. coli bacteria instead, we could start with just one bacterium and have enough bacteria to cover the Earth with a 111-foot layer in just 36 hours!</p>
 
 <p>As you've probably noticed, there isn't a 111-foot layer of bacteria covering the entire Earth (at least, not at my house), nor have bunnies taken possession of Rhode Island. Why, then, don't we see these populations getting as big as they theoretically could? E. coli, rabbits, and all living organisms need specific resources, such as nutrients and suitable environments, in order to survive and reproduce. These resources aren’t unlimited, and a population can only reach a size that match the availability of resources in its local environment.</p>
 
 <p>Population ecologists use a variety of mathematical methods to model population dynamics (how populations change in size and composition over time). Some of these models represent growth without environmental constraints, while others include "ceilings" determined by limited resources. Mathematical models of populations can be used to accurately describe changes occurring in a population and, importantly, to predict future changes.</p>    
-		<div class="image">
-			<img src="/forty-jekyll-theme/assets/images/cartoon_exp_log.png" alt="" data-position="center center" />
+		<div class="text-align">
+			<img src="/forty-jekyll-theme/assets/images/cartoon_exp_log.png" alt="" width="950" />
             <p>*end of the <a href=" https://www.khanacademy.org/science/biology/ecology/population-growth-and-regulation/a/exponential-logistic-growth">khanacademy</a> citation*</p>
         		</div>
 	    </div>
-            <p>The figure above shows how the logistic and exponential models are constructed. After reading this text it should be obvious to us that the growth of the virus cannot be exponential indefinitely and therefore we will use a logistic model to predict the number of deaths.</p>
+            <p>The figure above shows how the logistic and exponential models are constructed; to underestand it better you can watch the video <a data-scroll="" href="#bazinga">"Exponential growth and epidemics"</a> bellow.</p> 
+            <p>After reading this text it should be obvious to us that the growth of the virus cannot be exponential indefinitely and therefore we will use a logistic model to predict the number of deaths.</p>
             <h3>The logistic function:</h3>
         <p>If we solve the equation on the right of the previous figure, we obtain the logistic function. A logistic function or logistic curve is a common "S" shape this type of curve is known as a sigmoid and the equation as follows:</p>
-        $$f(t) = \frac{K}{1 + e^{-r(t-t_0)}}.$$
+        $$N(t) = \frac{K}{1 + e^{-r(t-t_0)}}.$$
         <ul> 
         <li> $e$ = the natural logarithm base (also known as Euler's number),</li>
         <li> $t_0$ = the $t$-value of the sigmoid where the rate starts to decreas, at the same time this point is the midpoint of the sigmoid's evolution,</li>
@@ -245,6 +264,7 @@ includeHTML();
         <p>While this video uses COVID-19 as a motivating example, 
         the main goal is simply a math lesson on exponentials 
         and logistic curves.</p>
+        <div id="bazinga"></div>
             <p>by 3Blue1Brown</p>
         </div>
         <div class="row">
