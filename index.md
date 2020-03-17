@@ -140,7 +140,7 @@ includeHTML();
     <div class="inner">
         <h3>The Data:</h3>
     </div>
-    <p>On the table bellow we show the COVID-19 data collected for the set of countries with at list one fatality case. We show the number of deaths in each country (# of deaths), the number of days since the first official report of death (# days), the growth rate that reflects the percentual increase of the deaths in that day i.e. (Today-Yesterday)/Yesterday and the growth factor we will discuss more about it in a future section. Finally the growth factor (GF) that is represented as (Today-Yesterday)/(Yesterday-Day before) i.e. the quotient of todays and yesterdays derivatives.</p>
+    <p>On the table bellow we show the COVID-19 data collected for the set of countries with at list one fatality case. We show the number of deaths in each country (# of deaths), the number of days since the first official report of death (# days), the growth rate that reflects the percentual increase of the deaths in that day i.e. (Today-Yesterday)/Yesterday and the growth factor we will discuss more about it in a future section. Finally the percentual growth factor (GF) that is represented as (Today-Yesterday)/(Yesterday-Day before) x 100 i.e. the quotient of todays and yesterdays derivatives.</p>
     <div class="row top-buffer"></div>
     <div w3-include-html="./assets/tables/tabledata.html"></div>
     <script>
