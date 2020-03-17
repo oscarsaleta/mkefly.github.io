@@ -121,8 +121,8 @@ function includeHTML() {
 
 <style>
 .top-buffer { margin-top:100px; }
-.text-fixed-right { width:500px; padding-right: 40px; float:right;}
-.text-fixed-left { width:500px; padding-left: 40px; float:left}
+.text-fixed-right { width: 50%; min-width: 350px; float:right;}
+.text-fixed-left { width: 50%; min-width: 350px; padding-right: 20px; float:left}
  .grid {
   display: flex;
  }
@@ -132,13 +132,6 @@ function includeHTML() {
 }
 .cole-1-2:last-child {
   margin-left: 0px;
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  body {
-    background: #999;
-    width: 100%;
-  }
 }
 
 </style>
@@ -169,14 +162,17 @@ function includeHTML() {
 	<div class="inner">
         <h3>Estimated end &amp; the number of fatalities:</h3>
 	</div>
+        <div class="image">
         <div class="text-fixed-left">
 			<img src="/forty-jekyll-theme/assets/images/daystoend.png" alt="" data-position="center center" width="95%" />
             <p>.....</p>
 		</div>
         <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="100%" />
+			<img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="95%" />
             <p>.....</p>
+            </div>
 		</div>
+        
 
 <div class="row top-buffer"></div>
 <section id="one">
@@ -185,7 +181,9 @@ function includeHTML() {
 	</div>
 <p>The following table contains the number of deaths in each country, the number of days since the first official report of death, the growth rate to the previous day; this corresponds to $(Today-Yesterday)/Yesterday$ and the growth factor we will discuss more about it in a future section.</p>
 <div class="row top-buffer"></div>
+
 <div w3-include-html="./assets/tables/tabledata.html"></div>
+
 <script>
 includeHTML();
 </script>
