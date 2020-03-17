@@ -1,4 +1,4 @@
-I"ã<<script type="text/x-mathjax-config">
+I"Ö<<script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
@@ -89,8 +89,6 @@ function includeHTML() {
     </div>
 </div>
 
-
-<div class="row top-buffer"></div>
 <section id="one">
     <div class="inner">
         <h3>The Data:</h3>
@@ -182,6 +180,9 @@ function includeHTML() {
 <section id="four" class="spotlights">
     <section>
         <div class="content">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Kas0tIxDvrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        </div>
+        <div class="text-fixed-right"> 
             <header class="major">
                 <h3>Exponential growth and epidemics:</h3>
             </header>
@@ -197,10 +198,8 @@ function includeHTML() {
                     <li><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" class="button">Go to their channel</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="text-fixed-left">    
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Kas0tIxDvrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-        </div>
+            </div>
+        &lt;/div&gt;
     </section>
 </section>
 
