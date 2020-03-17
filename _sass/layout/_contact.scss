@@ -34,7 +34,7 @@
 					position: relative;
 
 					&:before {
-						border-top: solid 1px _palette(border);
+						border-top: solid 0px _palette(border);
 						content: '';
 						display: block;
 						margin-left: -3em;
