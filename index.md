@@ -27,7 +27,35 @@ show_tile: true
   margin-left: 0px;
 }
 </style>
-
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
 <!-- Main -->
 <div id="main">
 <!-- 	<header class="major">
@@ -37,6 +65,12 @@ show_tile: true
 	<div class="inner">
         <h3>The Data:</h3>
 	</div>
+
+<div w3-include-html="tabledata.html"></div>
+<script>
+includeHTML();
+</script>
+
 </section>
 
 <!-- Two -->
@@ -111,7 +145,7 @@ show_tile: true
         </ul>   
         <h3>Simulating possible future scenarios:</h3>
         <p>We the logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
-        <p>In short the figures show, given the data and our model, what is expect to be observe.</p>        
+        <p>In short the figures show, given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>        
 		<div class="image">
 			<img src="{% link assets/images/Sigmoid-simulation-linear.png %}" alt="" data-position="center center" />
             <p>.....</p>
