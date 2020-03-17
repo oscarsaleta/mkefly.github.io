@@ -114,7 +114,7 @@ includeHTML();
         <img src="{% link assets/images/Sigmoid-simulation-linear.png %}" alt="" data-position="center center" width="100%"/>
     </div>
         <div class="row top-buffer1"></div>
-<p>In this figure we compare the current number of COVID-19 fatalities to date shown as color dots, with the multiple projections drawn from the posterior predictive distribution; this projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We provide estimates for countries with more than 300 deaths. We have have defined time zero for each country to the day they anounced their first fatality record. The vertical grid lines represent important events that may have affected the growing rate as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll href="#logistic">logistic model</a> and predict the # fatalities (N) for each country analysed here.</p>
+<p>In this figure we compare the current number of COVID-19 fatalities to date shown as color dots, with the multiple projections drawn from the posterior predictive distribution; this projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We have have defined time zero for each country to the day they anounced their first fatality record. The vertical grid lines represent important events that may have affected the growing rate as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll href="#logistic">logistic model</a> and predict the # fatalities (N) for each country analysed here.</p>
     <div class="image">
         <img src="{% link assets/images/Sigmoid-simulation-log.png %}" alt="" data-position="center center" width="100%"/>
     </div>
@@ -140,7 +140,7 @@ includeHTML();
     <div class="inner">
         <h3>The Data:</h3>
     </div>
-    <p>On the table bellow we show the COVID-19 data collected for the set of countries with at list one fatality case. We show the number of deaths in each country (# of deaths), the number of days since the first official report of death (# days), the growth rate that reflects the percentual increase of the deaths in that day i.e. (Today-Yesterday)/Yesterday and the growth factor we will discuss more about it in a future section. Finally the percentual growth factor (GF) that is represented as (Today-Yesterday)/(Yesterday-Day before) x 100 i.e. the quotient of todays and yesterdays derivatives.</p>
+    <p>On the table bellow we show the COVID-19 data collected for the set of countries with at list one fatality case. We show the number of deaths in each country (# of deaths), the number of days since the first official report of death (# days), the growth rate that reflects the percentual increase of the deaths in that day i.e. (Today-Yesterday)/Yesterday  x 100 and the growth factor we will discuss more about it in a future section. Finally the growth factor (GF) is represented as (Today-Yesterday)/(Yesterday-Day before) i.e. the quotient of todays and yesterdays derivatives.</p>
     <div class="row top-buffer"></div>
     <div w3-include-html="./assets/tables/tabledata.html"></div>
     <script>
