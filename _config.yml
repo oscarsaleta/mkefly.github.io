@@ -2,10 +2,10 @@
 title: COVID19
 subtitle: Statistics and Research
 email: miquel_oli@me.com
-description: This website aims to help increase the public’s understanding of the evolving COVID-19. The project by Miquel Oliver.
+description: This website aims to help increase the public’s understanding of the evolving COVID-19. by Miquel Oliver.
 baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
-author:
+author: Miquel Oliver
 street_address: null
 city: Palma
 state: Baleares

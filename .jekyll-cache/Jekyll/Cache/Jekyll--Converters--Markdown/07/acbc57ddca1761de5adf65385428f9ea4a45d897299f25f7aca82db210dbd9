@@ -1,24 +1,9 @@
-I"±6<script type="text/x-mathjax-config">
+I"´<<script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-
-<style>
-.top-buffer { margin-top:100px; }
-
- .grid {
-  display: flex;
- }
-.col-1-2 {
-  flex: 1;
-  margin-left: 20px;
-}
-.cole-1-2:last-child {
-  margin-left: 0px;
-}
-</style>
 
 <script>
 function includeHTML() {
@@ -49,6 +34,21 @@ function includeHTML() {
   }
 }
 </script>
+
+<style>
+.top-buffer { margin-top:100px; }
+.text-fixed { width:500px; }
+ .grid {
+  display: flex;
+ }
+.col-1-2 {
+  flex: 1;
+  margin-left: 20px;
+}
+.cole-1-2:last-child {
+  margin-left: 0px;
+}
+</style>
 
 <!-- Always get the latest version -->
 <!-- Not recommended for production sites! -->
@@ -206,29 +206,31 @@ includeHTML();
 	    </div>
 	</section>
 </section>
+    <div class="content">
+        <div class="text-fixed">
+        <p>We the logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
+        <p>In short the figures show, given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>
+			<img src="/forty-jekyll-theme/assets/images/parameters-c1-c2.png" alt="" data-position="center center" />
+            <p>.............................................................................</p>
+       </div>
 
-<div class="grid">
-    <div class="col-1-2">
-       <div class="content">
-        <p>...</p>
-               <div class="image">
+        <div class="text-fixed">
+        <p>We the logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
+        <p>In short the figures show, given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>
 			<img src="/forty-jekyll-theme/assets/images/parameters-c1-c2.png" alt="" data-position="center center" width="400" />
             <p>.............................................................................</p>
-		</div>
        </div>
     </div>
-    <div class="col-1-2">
-       <div class="content">
-           		<div class="image">
+    <div class="content">
+        <div class="image">
 			<img src="/forty-jekyll-theme/assets/images/parameters-c3-c1.png" alt="" data-position="center center" width="400" />
             <p>.............................................................................</p>
 		</div>
         <div class="image">
 			<img src="/forty-jekyll-theme/assets/images/parameters-c3-c2.png" alt="" data-position="center center" width="400" />
             <p>.............................................................................</p>
-		</div>
-       </div>
-    </div>
+        </div>
+	</div>
 </div>
 
 <!-- Two -->
@@ -282,5 +284,4 @@ includeHTML();
 		</div>
 	</section>
 </section>
-</div>
 :ET
