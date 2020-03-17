@@ -106,11 +106,11 @@ function includeHTML() {
 <div id="main">
     <div class="image">
         <img src="{% link assets/images/Sigmoid-simulation-linear.png %}" alt="" data-position="center center" width="100%"/>
-        <p>.....</p>
+<p>In this figure we compare the current number of CoVid19 fatalities to date shown as color dots, with the multiple projections drawn from the posterior predictive distribution; this projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We provide estimates for countries with more than 300 deaths. We have have defined time zero for each country to the day they anounced their first fatality record. The vertical grid lines represent important events that may have affected the growing rate as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll href="#logistic">logistic model</a> and predict the # fatalities (N) for each country analysed here.</p>
     </div>
     <div class="image">
         <img src="{% link assets/images/Sigmoid-simulation-log.png %}" alt="" data-position="center center" width="100%"/>
-        <p>.....</p>
+        <p>This figure shows the same results as the previews one but now we have changed the Total # of deaths axis to a logaritmic scale. This generates a visual straigth line at the begining of the outbreak and it "bendsdown" as if surpases the inflexion point; this point correspond to the moment for wich the evolution or the growth starts to slowdown.</p>
     </div>
 </div>
 
@@ -135,7 +135,7 @@ function includeHTML() {
     <div class="inner">
         <h3>The Data:</h3>
     </div>
-    <p>The following table contains the number of deaths in each country, the number of days since the first official report of death, the growth rate to the previous day; this corresponds to $(Today-Yesterday)/Yesterday$ and the growth factor we will discuss more about it in a future section.</p>
+    <p>On the table bellow we show the CoVid19 data collected for the set of countries with at list one fatality case. We show the number of deaths in each country (# of deaths), the number of days since the first official report of death (# days), the growth rate that reflects the percentual increase of the deaths in that day i.e. (Today-Yesterday)/Yesterday and the growth factor we will discuss more about it in a future section. Finally the growth factor (GF) that is represented as (Today-Yesterday)/(Yesterday-Day before) i.e. the quotient of todays and yesterdays derivatives.</p>
     <div class="row top-buffer"></div>
     <div w3-include-html="./assets/tables/tabledata.html"></div>
     <script>
@@ -183,6 +183,7 @@ function includeHTML() {
                 <h3>The death evalution simulations:</h3>
             </header>
         </div>
+        <div id="logistic"></div>
         <h3>Exponential & logistic growth</h3>
         <p>Exponential growth means that a given population will grow its size according to a growth rate. In the case of exponential growth this rate stays the same regardless of the population size, inducing the population to grow faster and faster as it gets larger, without an end.</p>
         <ul>
@@ -251,15 +252,15 @@ function includeHTML() {
     <p>This is a universal approach to fitting models to data. Have defined the generative model for the data, the likelihood function, and a prior distribution over the parameters.</p> 
     <p>The following figures show the results:</p>
     <img src="{% link assets/images/parameters-c1-c2.png %}" alt="" data-position="center center" width="95%"/>
-    <p>.............................................................................</p>
+    <p>In this figure we show the results obtained from the posterior i.e. the more likely scenarios given our current model. We show the results for the growth rate value in terms of the total number or deaths predicted by the logistic curves. Note that our estimates are consistent with a total number of deaths within [3000, 6000] for the all four countries.</p>
 </div>
 <div class="text-fixed-left">
     <img src="{% link assets/images/parameters-c3-c1.png %}" alt="" data-position="center center" width="95%"/>
-    <p>.............................................................................</p>
+    <p>In this figure we show the results obtained for the 'Inflexion day' in terms of the total growth rate; note that the end of the outbreak is simply the double of the 'Inflexion day'.</p>
 </div>
 <div class="text-fixed-left">
     <img src="{% link assets/images/parameters-c3-c2.png %}" alt="" data-position="center center" width="95%"/>
-    <p>.............................................................................</p>
+    <p>Figure for the 'Total number of deaths' and the 'Inflexion day'.</p>
 </div>
 <div style="overflow: auto; width:100%;">
     <div w3-include-html="./assets/tables/bay_summary.html"></div>
