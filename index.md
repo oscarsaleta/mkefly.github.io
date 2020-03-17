@@ -81,7 +81,7 @@ function includeHTML() {
 	</div>
 <p>The following table contains the number of deaths in each country, the number of days since the first official report of death, the growth rate to the previous day; this corresponds to $(Today-Yesterday)/Yesterday$ and the growth factor we will discuss more about it in a future section.</p>
 <div class="row top-buffer"></div>
-<div w3-include-html="tabledata.html"></div>
+<div w3-include-html="./assets/tables/tabledata.html"></div>
 <script>
 includeHTML();
 </script>
