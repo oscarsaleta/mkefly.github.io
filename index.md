@@ -4,7 +4,7 @@ title: Home
 landing-title: 'COVID-19 Statistics and Research'
 description: 'This website aims to help increase the public’s understanding of the evolving COVID-19.'
 image: null
-author: 'Miquel Oliver'
+author: 'Miquel Oliver & Xisco Jimenez Forteza'
 show_tile: true
 ---
 <script type="text/x-mathjax-config">
@@ -102,6 +102,11 @@ function includeHTML() {
 }
 </style>
 
+<div w3-include-html="./assets/tables/last_update.html"></div>
+<script>
+includeHTML();
+</script>
+    
 <!-- Main -->
 <div id="main">
     <div class="image">
@@ -117,8 +122,7 @@ function includeHTML() {
 
 
 <!-- Two -->
-<h3>Estimated end & the number of fatalities:</h3>
-
+<h4>Estimated end & the number of fatalities:</h4>
 <div class="row">
   <div class="column">
             <img src="{% link assets/images/daystoend.png %}" alt="" data-position="center center" width="100%"/>
