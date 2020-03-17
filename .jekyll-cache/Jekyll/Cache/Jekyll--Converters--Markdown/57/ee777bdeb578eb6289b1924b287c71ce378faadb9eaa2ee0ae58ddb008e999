@@ -1,4 +1,4 @@
-I"Á<<script type="text/x-mathjax-config">
+I"m><script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
@@ -74,9 +74,25 @@ function includeHTML() {
 
 <!-- Main -->
 <div id="main">
-<!-- 	<header class="major">
-	    <h2>Sed amet aliquam</h2>
-		</header> -->
+		<div class="image">
+			<img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-linear.png" alt="" data-position="center center" width="100%" />
+            <p>.....</p>
+		</div>
+        <div class="image">
+			<img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-log.png" alt="" data-position="center center" width="100%" />
+            <p>.....</p>
+		</div>
+	<div class="inner">
+        <h3>Estimated end &amp; the number of fatalities:</h3>
+	</div>
+        <div class="text-fixed-left">
+			<img src="/forty-jekyll-theme/assets/images/daystoend.png" alt="" data-position="center center" width="95%" />
+            <p>.....</p>
+		</div>
+        <div class="text-fixed-left">
+			<img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="100%" />
+            <p>.....</p>
+		</div>
 <section id="one">
 	<div class="inner">
         <h3>The Data:</h3>
@@ -93,6 +109,11 @@ includeHTML();
 <!-- Two -->
 <section id="two" class="spotlights">
 	<section>
+    <div class="content">
+		<div>
+			<img width="350" src="/forty-jekyll-theme/assets/images/pic08.jpg" alt="" data-position="center center" />
+		</div>
+        </div>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
@@ -112,9 +133,6 @@ includeHTML();
                     </div>
                 </div>
 			</div>
-                <div class="text-fixed-lefgt">    
-			<img src="/forty-jekyll-theme/assets/images/pic08.jpg" alt="" data-position="center center" />
-    </div>
 		</div>
 	</section>
 </section>
@@ -165,14 +183,6 @@ includeHTML();
         <h3>Simulating possible future scenarios:</h3>
         <p>We the logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
         <p>In short the figures show, given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>        
-		<div class="image">
-			<img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-linear.png" alt="" data-position="center center" />
-            <p>.....</p>
-		</div>
-        <div class="image">
-			<img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-log.png" alt="" data-position="center center" />
-            <p>.....</p>
-		</div>
 	</section>
 </section>
 
@@ -256,19 +266,19 @@ includeHTML();
         <div class="text-fixed-left">
             <p>We the logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
             <p>In short the figures show, given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>
-			<img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="500" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
        </div>
                <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Iran.png" alt="" data-position="center center" width="500" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-Iran.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
 		</div>
         <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Italy.png" alt="" data-position="center center" width="500" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-Italy.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
         </div>
         <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Spain.png" alt="" data-position="center center" width="500" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-Spain.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
         </div>
 <div class="row top-buffer"></div>

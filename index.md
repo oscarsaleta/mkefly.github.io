@@ -88,6 +88,19 @@ function includeHTML() {
 			<img src="{% link assets/images/Sigmoid-simulation-log.png %}" alt="" data-position="center center" width="100%"/>
             <p>.....</p>
 		</div>
+	<div class="inner">
+        <h3>Estimated end & the number of fatalities:</h3>
+	</div>
+        <div class="text-fixed-left">
+			<img src="{% link assets/images/daystoend.png %}" alt="" data-position="center center" width="95%"/>
+            <p>.....</p>
+		</div>
+        <div class="text-fixed-left">
+			<img src="{% link assets/images/fatalities.png %}" alt="" data-position="center center" width="100%"/>
+            <p>.....</p>
+		</div>
+
+<div class="row top-buffer"></div>
 <section id="one">
 	<div class="inner">
         <h3>The Data:</h3>

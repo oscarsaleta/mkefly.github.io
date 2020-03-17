@@ -1,4 +1,4 @@
-I"›<<script type="text/x-mathjax-config">
+I"n><script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
@@ -80,6 +80,17 @@ function includeHTML() {
 		</div>
         <div class="image">
 			<img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-log.png" alt="" data-position="center center" width="100%" />
+            <p>.....</p>
+		</div>
+	<div class="inner">
+        <h3>Estimated end &amp; the number of fatalities:</h3>
+	</div>
+        <div class="text-fixed-left">
+			<img src="/forty-jekyll-theme/assets/images/daystoend.png" alt="" data-position="center center" width="100%" />
+            <p>.....</p>
+		</div>
+        <div class="text-fixed-left">
+			<img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
 		</div>
 <section id="one">

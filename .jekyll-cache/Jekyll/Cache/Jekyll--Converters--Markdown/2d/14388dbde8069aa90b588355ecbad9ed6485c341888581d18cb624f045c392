@@ -1,4 +1,4 @@
-I" <<script type="text/x-mathjax-config">
+I"ç@<script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
@@ -74,12 +74,32 @@ function includeHTML() {
 
 <!-- Main -->
 <div id="main">
-<!-- 	<header class="major">
-	    <h2>Sed amet aliquam</h2>
-		</header> -->
+		<div class="image">
+			<img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-linear.png" alt="" data-position="center center" width="100%" />
+            <p>.....</p>
+		</div>
+        <div class="image">
+			<img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-log.png" alt="" data-position="center center" width="100%" />
+            <p>.....</p>
+		</div>
+	<div class="inner">
+        <h3>Estimated end &amp; the number of fatalities:</h3>
+	</div>
+        <div class="text-fixed-left">
+			<img src="/forty-jekyll-theme/assets/images/daystoend.png" alt="" data-position="center center" width="95%" />
+            <p>.....</p>
+		</div>
+        <div class="text-fixed-left">
+			<img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="100%" />
+            <p>.....</p>
+		</div>
+        </div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    &lt;/div&gt;
+</code></pre></div></div>
+
 <section id="one">
 	<div class="inner">
-        <h3>The Data:</h3>
+        <h3>The Da23ta:</h3>
 	</div>
 <p>The following table contains the number of deaths in each country, the number of days since the first official report of death, the growth rate to the previous day; this corresponds to $(Today-Yesterday)/Yesterday$ and the growth factor we will discuss more about it in a future section.</p>
 <div class="row top-buffer"></div>
@@ -95,7 +115,7 @@ includeHTML();
 	<section>
     <div class="content">
 		<div>
-			<img width="150%" src="/forty-jekyll-theme/assets/images/pic08.jpg" alt="" data-position="center center" />
+			<img width="350" src="/forty-jekyll-theme/assets/images/pic08.jpg" alt="" data-position="center center" />
 		</div>
         </div>
 		<div class="content">
@@ -120,7 +140,6 @@ includeHTML();
 		</div>
 	</section>
 </section>
-
 
 <div class="row top-buffer"></div>
 
@@ -167,14 +186,6 @@ includeHTML();
         <h3>Simulating possible future scenarios:</h3>
         <p>We the logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
         <p>In short the figures show, given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>        
-		<div class="image">
-			<img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-linear.png" alt="" data-position="center center" />
-            <p>.....</p>
-		</div>
-        <div class="image">
-			<img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-log.png" alt="" data-position="center center" />
-            <p>.....</p>
-		</div>
 	</section>
 </section>
 
@@ -205,25 +216,26 @@ includeHTML();
 </section>
 
 <div class="row top-buffer"></div>
-    	<div class="inner">
-        <header class="major">
-			<h3>Posterior parameters:</h3>
-		</header>
-        </div>
-        <div class="text-fixed-left">
-            <p>We the logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
-            <p>In short the figures show, given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>
-                <img src="/forty-jekyll-theme/assets/images/parameters-c1-c2.png" alt="" data-position="center center" width="80%" />
-            <p>.............................................................................</p>
-       </div>
-               <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/parameters-c3-c1.png" alt="" data-position="center center" width="80%" />
-            <p>.............................................................................</p>
-		</div>
-        <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/parameters-c3-c2.png" alt="" data-position="center center" width="80%" />
-            <p>.............................................................................</p>
-        </div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	&lt;div class="inner"&gt;
+    &lt;header class="major"&gt;
+		&lt;h3&gt;Posterior parameters:&lt;/h3&gt;
+	&lt;/header&gt;
+    &lt;/div&gt;
+    &lt;div class="text-fixed-left"&gt;
+        &lt;p&gt;We the logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).&lt;/p&gt;
+        &lt;p&gt;In short the figures show, given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.&lt;/p&gt;
+            &lt;img src="/forty-jekyll-theme/assets/images/parameters-c1-c2.png" alt="" data-position="center center" width="80%"/&gt;
+        &lt;p&gt;.............................................................................&lt;/p&gt;
+   &lt;/div&gt;
+           &lt;div class="text-fixed-left"&gt;
+		&lt;img src="/forty-jekyll-theme/assets/images/parameters-c3-c1.png" alt="" data-position="center center" width="80%"/&gt;
+        &lt;p&gt;.............................................................................&lt;/p&gt;
+	&lt;/div&gt;
+    &lt;div class="text-fixed-left"&gt;
+		&lt;img src="/forty-jekyll-theme/assets/images/parameters-c3-c2.png" alt="" data-position="center center" width="80%"/&gt;
+        &lt;p&gt;.............................................................................&lt;/p&gt;
+    &lt;/div&gt;
+</code></pre></div></div>
 <div class="row top-buffer"></div>
 <!-- Two -->
 <section id="four" class="spotlights">
@@ -248,32 +260,31 @@ includeHTML();
 	</section>
 </section>
 
-
 <div class="row top-buffer"></div>
-    	<div class="inner">
-        <header class="major">
-			<h3>Growth factor:</h3>
-		</header>
-        </div>
-        <div class="text-fixed-left">
-            <p>We the logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
-            <p>In short the figures show, given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>
-			<img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="500" />
-            <p>.....</p>
-       </div>
-               <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Iran.png" alt="" data-position="center center" width="500" />
-            <p>.....</p>
-		</div>
-        <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Italy.png" alt="" data-position="center center" width="500" />
-            <p>.....</p>
-        </div>
-        <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Spain.png" alt="" data-position="center center" width="500" />
-            <p>.....</p>
-        </div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	&lt;div class="inner"&gt;
+    &lt;header class="major"&gt;
+		&lt;h3&gt;Growth factor:&lt;/h3&gt;
+	&lt;/header&gt;
+    &lt;/div&gt;
+    &lt;div class="text-fixed-left"&gt;
+        &lt;p&gt;We the logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).&lt;/p&gt;
+        &lt;p&gt;In short the figures show, given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.&lt;/p&gt;
+		&lt;img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="100%"/&gt;
+        &lt;p&gt;.....&lt;/p&gt;
+   &lt;/div&gt;
+           &lt;div class="text-fixed-left"&gt;
+		&lt;img src="/forty-jekyll-theme/assets/images/Growth-Iran.png" alt="" data-position="center center" width="100%"/&gt;
+        &lt;p&gt;.....&lt;/p&gt;
+	&lt;/div&gt;
+    &lt;div class="text-fixed-left"&gt;
+		&lt;img src="/forty-jekyll-theme/assets/images/Growth-Italy.png" alt="" data-position="center center" width="100%"/&gt;
+        &lt;p&gt;.....&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="text-fixed-left"&gt;
+		&lt;img src="/forty-jekyll-theme/assets/images/Growth-Spain.png" alt="" data-position="center center" width="100%"/&gt;
+        &lt;p&gt;.....&lt;/p&gt;
+    &lt;/div&gt;
+</code></pre></div></div>
 <div class="row top-buffer"></div>
 
-</div>
 :ET
