@@ -111,7 +111,7 @@ includeHTML();
 <div id="main">
     <div class="image">
         <img src="{% link assets/images/Sigmoid-simulation-linear.png %}" alt="" data-position="center center" width="100%"/>
-<p>In this figure we compare the current number of CoVid19 fatalities to date shown as color dots, with the multiple projections drawn from the posterior predictive distribution; this projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We provide estimates for countries with more than 300 deaths. We have have defined time zero for each country to the day they anounced their first fatality record. The vertical grid lines represent important events that may have affected the growing rate as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll href="#logistic">logistic model</a> and predict the # fatalities (N) for each country analysed here.</p>
+<p>In this figure we compare the current number of COVID-19 fatalities to date shown as color dots, with the multiple projections drawn from the posterior predictive distribution; this projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We provide estimates for countries with more than 300 deaths. We have have defined time zero for each country to the day they anounced their first fatality record. The vertical grid lines represent important events that may have affected the growing rate as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll href="#logistic">logistic model</a> and predict the # fatalities (N) for each country analysed here.</p>
     </div>
     <div class="image">
         <img src="{% link assets/images/Sigmoid-simulation-log.png %}" alt="" data-position="center center" width="100%"/>
@@ -119,18 +119,16 @@ includeHTML();
     </div>
 </div>
 
-
-
 <!-- Two -->
 <h4>Estimated end & the number of fatalities:</h4>
 <div class="row">
   <div class="column">
             <img src="{% link assets/images/daystoend.png %}" alt="" data-position="center center" width="100%"/>
-            <p>............................................................</p>
+            <p>Marginalised probability distribution on the number of estimated days to the end of the outbreak (the flat zone) i.e. when the number of deaths per day tends to zero. As we can see in the figure China was already surpased that point. Remember that the zero in this case corresponds to the last update and the highest point in the blub ditributions is the most likely number of days for the outbreak to finish.</p>
   </div>
   <div class="column">
         <img src="{% link assets/images/fatalities.png %}" alt="" data-position="center center" width="100%"/>
-        <p>............................................................</p>
+        <p>Marginalised probability distribution on the estimated number of deaths. The prediction for China agrees with the 3226 cases reported at 17/09/2020. These cases must be taken as a lower limit to the death estimate number. Any non-expected reburst of the curve will make increase the number of cases. An strict confinement of the population is therefore essential.</p>
   </div>
 </div>
 
@@ -139,7 +137,7 @@ includeHTML();
     <div class="inner">
         <h3>The Data:</h3>
     </div>
-    <p>On the table bellow we show the CoVid19 data collected for the set of countries with at list one fatality case. We show the number of deaths in each country (# of deaths), the number of days since the first official report of death (# days), the growth rate that reflects the percentual increase of the deaths in that day i.e. (Today-Yesterday)/Yesterday and the growth factor we will discuss more about it in a future section. Finally the growth factor (GF) that is represented as (Today-Yesterday)/(Yesterday-Day before) i.e. the quotient of todays and yesterdays derivatives.</p>
+    <p>On the table bellow we show the COVID-19 data collected for the set of countries with at list one fatality case. We show the number of deaths in each country (# of deaths), the number of days since the first official report of death (# days), the growth rate that reflects the percentual increase of the deaths in that day i.e. (Today-Yesterday)/Yesterday and the growth factor we will discuss more about it in a future section. Finally the growth factor (GF) that is represented as (Today-Yesterday)/(Yesterday-Day before) i.e. the quotient of todays and yesterdays derivatives.</p>
     <div class="row top-buffer"></div>
     <div w3-include-html="./assets/tables/tabledata.html"></div>
     <script>
@@ -207,20 +205,21 @@ includeHTML();
     <img src="{% link assets/images/cartoon_exp_log.png %}" alt="" width="950"/>
     <p>*end of the <a href=" https://www.khanacademy.org/science/biology/ecology/population-growth-and-regulation/a/exponential-logistic-growth">khanacademy</a> citation*</p>
 </div>
-        <p>The figure above shows how the logistic and exponential models are constructed; to underestand it better you can watch the video <a data-scroll href="#bazinga">"Exponential growth and epidemics"</a> bellow.</p> 
-        <p>After reading this text it should be obvious to us that the growth of the virus cannot be exponential indefinitely and therefore we will use a logistic model to predict the number of deaths.</p>
+        <p>The figure above shows how the logistic and exponential models are constructed; to underestand them better you can watch the video  <a data-scroll href="#bazinga">"Exponential growth and epidemics"</a> bellow.</p> 
+        <p>After reading this text it should be obvious to us that the growth of the virus cannot be exponential indefinitely but it has to flatten at some point. One of these functions is the logistic model, used here to predict the number of deaths. </p>
         <h3>The logistic function:</h3>
-        <p>If we solve the equation on the right of the previous figure, we obtain the logistic function. A logistic function or logistic curve is a common "S" shape this type of curve is known as a sigmoid and the equation as follows:</p>
+        <p>If we solve the equation on the right of the previous figure, we obtain the logistic function. A logistic function or logistic curve has common "S" shape, this type of curve is known as a sigmoid and its equation is as follows:</p>
         $$N(t) = \frac{K}{1 + e^{-r(t-t_0)}}.$$
         <ul> 
             <li> $e$ = the natural logarithm base (also known as Euler's number),</li>
-            <li> $t_0$ = the $t$-value of the sigmoid where the rate starts to decreas, at the same time this point is the midpoint of the sigmoid's evolution,</li>
-            <li> $K$ = the curve's maximum value; in this case the maximum number of deaths and</li>
+            <li> $t_0$ = the $t$-value of the sigmoid where the rate starts to decrease, the midpoint of its evolutio and the 'inflexion point' of the sigmoid's curve.</li>
+            <li> $K$ =the curve's maximum value; in this case the maximum number of deaths.</li>
             <li> $r$ = the logistic growth rate or steepness of the curve</li>
         </ul>   
         <h3>Simulating possible future scenarios:</h3>
         <p>The logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
-        <p>In short the figures show, given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>        
+        <p>In short the figures shows, that given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>   
+        In short, the figures we shows that given the data and our model, what evolutions are expect to be observe. Note that the predictions have the uncertainty into account. This implies that for the cases where few data points are available this uncertainty grows.     
     </section>
 </section>
 
