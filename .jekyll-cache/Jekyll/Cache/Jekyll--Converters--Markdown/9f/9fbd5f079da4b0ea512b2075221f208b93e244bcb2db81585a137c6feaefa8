@@ -1,4 +1,4 @@
-I"ù;<script type="text/x-mathjax-config">
+I"ô;<script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
@@ -272,19 +272,19 @@ includeHTML();
         </div>
         <div class="text-fixed-left">
             <p>.....</p>
-			<img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="100%" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="80%" />
             <p>.....</p>
        </div>
                <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Iran.png" alt="" data-position="center center" width="100%" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-Iran.png" alt="" data-position="center center" width="80%" />
             <p>.....</p>
 		</div>
         <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Italy.png" alt="" data-position="center center" width="100%" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-Italy.png" alt="" data-position="center center" width="80%" />
             <p>.....</p>
         </div>
         <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Spain.png" alt="" data-position="center center" width="100%" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-Spain.png" alt="" data-position="center center" width="80%" />
             <p>.....</p>
         </div>
 <div class="row top-buffer"></div>

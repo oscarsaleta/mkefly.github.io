@@ -1,4 +1,4 @@
-I"[;<script type="text/x-mathjax-config">
+I"™;<script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
@@ -84,7 +84,7 @@ function includeHTML() {
             <p>.....</p>
 		</div>
         <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="95%" />
+			<img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
             </div>
 		</div>
@@ -236,7 +236,9 @@ includeHTML();
 			<img src="/forty-jekyll-theme/assets/images/parameters-c3-c2.png" alt="" data-position="center center" width="95%" />
             <p>.............................................................................</p>
         </div>
+        <div style="overflow: auto; width:100%;">
         <div w3-include-html="./assets/tables/bay_summary.html"></div>
+        </div>
 <div class="row top-buffer"></div>
 <!-- Two -->
 <section id="four" class="spotlights">
@@ -270,19 +272,19 @@ includeHTML();
         </div>
         <div class="text-fixed-left">
             <p>.....</p>
-			<img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="100%" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="95%" />
             <p>.....</p>
        </div>
                <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Iran.png" alt="" data-position="center center" width="100%" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-Iran.png" alt="" data-position="center center" width="95%" />
             <p>.....</p>
 		</div>
         <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Italy.png" alt="" data-position="center center" width="100%" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-Italy.png" alt="" data-position="center center" width="95%" />
             <p>.....</p>
         </div>
         <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Spain.png" alt="" data-position="center center" width="100%" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-Spain.png" alt="" data-position="center center" width="95%" />
             <p>.....</p>
         </div>
 <div class="row top-buffer"></div>

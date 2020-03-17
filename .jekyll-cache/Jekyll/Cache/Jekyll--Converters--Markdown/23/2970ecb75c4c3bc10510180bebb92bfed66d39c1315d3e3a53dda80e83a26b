@@ -1,4 +1,4 @@
-I"œ;<script type="text/x-mathjax-config">
+I"+;<script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
@@ -84,7 +84,7 @@ function includeHTML() {
             <p>.....</p>
 		</div>
         <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="95%" />
+			<img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
             </div>
 		</div>
@@ -265,26 +265,21 @@ includeHTML();
 
 
 <div class="row top-buffer"></div>
-    	<div class="inner">
-        <header class="major">
-			<h3>Growth factor:</h3>
-		</header>
-        </div>
         <div class="text-fixed-left">
             <p>.....</p>
-			<img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="100%" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="95%" />
             <p>.....</p>
        </div>
                <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Iran.png" alt="" data-position="center center" width="100%" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-Iran.png" alt="" data-position="center center" width="95%" />
             <p>.....</p>
 		</div>
         <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Italy.png" alt="" data-position="center center" width="100%" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-Italy.png" alt="" data-position="center center" width="95%" />
             <p>.....</p>
         </div>
         <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/Growth-Spain.png" alt="" data-position="center center" width="100%" />
+			<img src="/forty-jekyll-theme/assets/images/Growth-Spain.png" alt="" data-position="center center" width="95%" />
             <p>.....</p>
         </div>
 <div class="row top-buffer"></div>
