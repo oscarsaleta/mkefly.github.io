@@ -168,7 +168,7 @@ function includeHTML() {
             <p>.....</p>
 		</div>
         <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="95%" />
+			<img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
             </div>
 		</div>
@@ -265,7 +265,7 @@ includeHTML();
         <li> $r$ = the logistic growth rate or steepness of the curve</li>
         </ul>   
         <h3>Simulating possible future scenarios:</h3>
-        <p>We the logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
+        <p>The logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
         <p>In short the figures show, given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>        
 	</section>
 </section>
@@ -303,18 +303,25 @@ includeHTML();
 		</header>
         </div>
         <div class="text-fixed-left">
-            <p>We the logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
-            <p>In short the figures show, given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>
-                <img src="/forty-jekyll-theme/assets/images/parameters-c1-c2.png" alt="" data-position="center center" width="80%" />
+            <p>Here we show the results of for the Bayesian analysis parameters. 
+            Our goal is to show the infered probability distributions over the model parameters
+            of interest, the probabilities of models and the probability distributions over predicted
+            data.</p>
+            <p>This is a universal approach to fitting models to data. Have defined the generative model for the data, the likelihood function, and a prior distribution over the parameters.</p> 
+            <p>The following figures show the results:</p>
+                <img src="/forty-jekyll-theme/assets/images/parameters-c1-c2.png" alt="" data-position="center center" width="95%" />
             <p>.............................................................................</p>
        </div>
                <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/parameters-c3-c1.png" alt="" data-position="center center" width="80%" />
+			<img src="/forty-jekyll-theme/assets/images/parameters-c3-c1.png" alt="" data-position="center center" width="95%" />
             <p>.............................................................................</p>
 		</div>
         <div class="text-fixed-left">
-			<img src="/forty-jekyll-theme/assets/images/parameters-c3-c2.png" alt="" data-position="center center" width="80%" />
+			<img src="/forty-jekyll-theme/assets/images/parameters-c3-c2.png" alt="" data-position="center center" width="95%" />
             <p>.............................................................................</p>
+        </div>
+        <div style="overflow: auto; width:100%;">
+        <div w3-include-html="./assets/tables/bay_summary.html"></div>
         </div>
 <div class="row top-buffer"></div>
 <!-- Two -->
@@ -348,8 +355,7 @@ includeHTML();
 		</header>
         </div>
         <div class="text-fixed-left">
-            <p>We the logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
-            <p>In short the figures show, given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>
+            <p>.....</p>
 			<img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
        </div>

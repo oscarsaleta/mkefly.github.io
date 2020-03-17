@@ -1,18 +1,10 @@
----
-layout: home
-title: Home
-landing-title: 'COVID-19 Statistics and Research'
-description: 'This website aims to help increase the public‚Äôs understanding of the evolving COVID-19.'
-image: null
-author: 'Miquel Oliver'
-show_tile: true
----
-<script type="text/x-mathjax-config">
+I"ù;<script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
-<script type="text/javascript"
-  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+
 <script>
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
@@ -42,6 +34,7 @@ function includeHTML() {
   }
 }
 </script>
+
 <style>
 .top-buffer { margin-top:100px; }
 .text-fixed-right { width: 50%; min-width: 350px; float:right;}
@@ -58,6 +51,7 @@ function includeHTML() {
 }
 
 </style>
+
 <!-- Always get the latest version -->
 <!-- Not recommended for production sites! -->
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
@@ -74,23 +68,23 @@ function includeHTML() {
 <!-- Main -->
 <div id="main">
 		<div class="image">
-			<img src="{% link assets/images/Sigmoid-simulation-linear.png %}" alt="" data-position="center center" width="100%"/>
+			<img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-linear.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
 		</div>
         <div class="image">
-			<img src="{% link assets/images/Sigmoid-simulation-log.png %}" alt="" data-position="center center" width="100%"/>
+			<img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-log.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
 		</div>
 	<div class="inner">
-        <h3>Estimated end & the number of fatalities:</h3>
+        <h3>Estimated end &amp; the number of fatalities:</h3>
 	</div>
         <div class="image">
         <div class="text-fixed-left">
-			<img src="{% link assets/images/daystoend.png %}" alt="" data-position="center center" width="95%"/>
+			<img src="/forty-jekyll-theme/assets/images/daystoend.png" alt="" data-position="center center" width="95%" />
             <p>.....</p>
 		</div>
         <div class="text-fixed-left">
-			<img src="{% link assets/images/fatalities.png %}" alt="" data-position="center center" width="100%"/>
+			<img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
             </div>
 		</div>
@@ -117,7 +111,7 @@ includeHTML();
 	<section>
     <div class="content">
 		<div>
-			<img width="350" src="{% link assets/images/pic08.jpg %}" alt="" data-position="center center" />
+			<img width="350" src="/forty-jekyll-theme/assets/images/pic08.jpg" alt="" data-position="center center" />
 		</div>
         </div>
 		<div class="content">
@@ -153,7 +147,7 @@ includeHTML();
 			<h3>The death evalution simulations:</h3>
 		</header>
 
-        <h3>Exponential & logistic growth</h3>
+        <h3>Exponential &amp; logistic growth</h3>
         <p>Exponential growth means that a given population will grow its size according to a growth rate. In the case of exponential growth this rate stays the same regardless of the population size, inducing the population to grow faster and faster as it gets larger, without an end.</p>
         <ul>
         <li>In nature, populations can only grow exponentially during some period, but inevitably the growth rate will ultimately be limited for example by the resource availability.</li>
@@ -171,11 +165,11 @@ includeHTML();
 
 <p>Population ecologists use a variety of mathematical methods to model population dynamics (how populations change in size and composition over time). Some of these models represent growth without environmental constraints, while others include "ceilings" determined by limited resources. Mathematical models of populations can be used to accurately describe changes occurring in a population and, importantly, to predict future changes.</p>    
 		<div class="text-align">
-			<img src="{% link assets/images/cartoon_exp_log.png %}" alt="" width="950"/>
+			<img src="/forty-jekyll-theme/assets/images/cartoon_exp_log.png" alt="" width="950" />
             <p>*end of the <a href=" https://www.khanacademy.org/science/biology/ecology/population-growth-and-regulation/a/exponential-logistic-growth">khanacademy</a> citation*</p>
         		</div>
 	    </div>
-            <p>The figure above shows how the logistic and exponential models are constructed; to underestand it better you can watch the video <a data-scroll href="#bazinga">"Exponential growth and epidemics"</a> bellow.</p> 
+            <p>The figure above shows how the logistic and exponential models are constructed; to underestand it better you can watch the video <a data-scroll="" href="#bazinga">"Exponential growth and epidemics"</a> bellow.</p> 
             <p>After reading this text it should be obvious to us that the growth of the virus cannot be exponential indefinitely and therefore we will use a logistic model to predict the number of deaths.</p>
             <h3>The logistic function:</h3>
         <p>If we solve the equation on the right of the previous figure, we obtain the logistic function. A logistic function or logistic curve is a common "S" shape this type of curve is known as a sigmoid and the equation as follows:</p>
@@ -213,7 +207,7 @@ includeHTML();
         </div>
     </div>
     <div class="text-fixed-left">    
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Kas0tIxDvrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Kas0tIxDvrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
     </div>
 	</section>
 </section>
@@ -231,15 +225,15 @@ includeHTML();
             data.</p>
             <p>This is a universal approach to fitting models to data. Have defined the generative model for the data, the likelihood function, and a prior distribution over the parameters.</p> 
             <p>The following figures show the results:</p>
-                <img src="{% link assets/images/parameters-c1-c2.png %}" alt="" data-position="center center" width="95%"/>
+                <img src="/forty-jekyll-theme/assets/images/parameters-c1-c2.png" alt="" data-position="center center" width="95%" />
             <p>.............................................................................</p>
        </div>
                <div class="text-fixed-left">
-			<img src="{% link assets/images/parameters-c3-c1.png %}" alt="" data-position="center center" width="95%"/>
+			<img src="/forty-jekyll-theme/assets/images/parameters-c3-c1.png" alt="" data-position="center center" width="95%" />
             <p>.............................................................................</p>
 		</div>
         <div class="text-fixed-left">
-			<img src="{% link assets/images/parameters-c3-c2.png %}" alt="" data-position="center center" width="95%"/>
+			<img src="/forty-jekyll-theme/assets/images/parameters-c3-c2.png" alt="" data-position="center center" width="95%" />
             <p>.............................................................................</p>
         </div>
         <div style="overflow: auto; width:100%;">
@@ -264,7 +258,7 @@ includeHTML();
         </div>
     </div>
     <div class="text-fixed-left">    
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R13BD8qKeTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R13BD8qKeTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
     </div>
 	</section>
 </section>
@@ -278,20 +272,22 @@ includeHTML();
         </div>
         <div class="text-fixed-left">
             <p>.....</p>
-			<img src="{% link assets/images/Growth-China.png %}" alt="" data-position="center center" width="100%"/>
+			<img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
        </div>
                <div class="text-fixed-left">
-			<img src="{% link assets/images/Growth-Iran.png %}" alt="" data-position="center center" width="100%"/>
+			<img src="/forty-jekyll-theme/assets/images/Growth-Iran.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
 		</div>
         <div class="text-fixed-left">
-			<img src="{% link assets/images/Growth-Italy.png %}" alt="" data-position="center center" width="100%"/>
+			<img src="/forty-jekyll-theme/assets/images/Growth-Italy.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
         </div>
         <div class="text-fixed-left">
-			<img src="{% link assets/images/Growth-Spain.png %}" alt="" data-position="center center" width="100%"/>
+			<img src="/forty-jekyll-theme/assets/images/Growth-Spain.png" alt="" data-position="center center" width="100%" />
             <p>.....</p>
         </div>
 <div class="row top-buffer"></div>
 
+</div>
+:ET
