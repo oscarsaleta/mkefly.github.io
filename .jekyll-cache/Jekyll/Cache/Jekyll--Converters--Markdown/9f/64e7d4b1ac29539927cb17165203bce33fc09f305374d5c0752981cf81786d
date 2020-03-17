@@ -1,18 +1,10 @@
----
-layout: home
-title: Home
-landing-title: 'COVID-19 Statistics and Research'
-description: 'This website aims to help increase the public’s understanding of the evolving COVID-19.'
-image: null
-author: 'Miquel Oliver & Xisco Jimenez Forteza'
-show_tile: true
----
-<script type="text/x-mathjax-config">
+I"eI<script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
-<script type="text/javascript"
-  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+
 <script>
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
@@ -42,9 +34,9 @@ function includeHTML() {
   }
 }
 </script>
+
 <style>
 .top-buffer { margin-top:100px; }
-.top-buffer1 { margin-top:20px; }
 .text-fixed-right { width: 50%; min-width: 350px; float:right;}
 .text-fixed-left { width: 50%; min-width: 350px; padding-right: 20px; float:left}
  .grid {
@@ -58,6 +50,7 @@ function includeHTML() {
   margin-left: 0px;
 }
 </style>
+
 <!-- Always get the latest version -->
 <!-- Not recommended for production sites! -->
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
@@ -107,34 +100,31 @@ function includeHTML() {
 <script>
 includeHTML();
 </script>
-    
+
 <!-- Main -->
 <div id="main">
     <div class="image">
-        <img src="{% link assets/images/Sigmoid-simulation-linear.png %}" alt="" data-position="center center" width="100%"/>
+        <img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-linear.png" alt="" data-position="center center" width="100%" />
+<p>In this figure we compare the current number of COVID-19 fatalities to date shown as color dots, with the multiple projections drawn from the posterior predictive distribution; this projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We provide estimates for countries with more than 300 deaths. We have have defined time zero for each country to the day they anounced their first fatality record. The vertical grid lines represent important events that may have affected the growing rate as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll="" href="#logistic">logistic model</a> and predict the # fatalities (N) for each country analysed here.</p>
     </div>
-        <div class="row top-buffer1"></div>
-<p>In this figure we compare the current number of COVID-19 fatalities to date shown as color dots, with the multiple projections drawn from the posterior predictive distribution; this projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We provide estimates for countries with more than 300 deaths. We have have defined time zero for each country to the day they anounced their first fatality record. The vertical grid lines represent important events that may have affected the growing rate as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll href="#logistic">logistic model</a> and predict the # fatalities (N) for each country analysed here.</p>
-    <div class="image">
-        <img src="{% link assets/images/Sigmoid-simulation-log.png %}" alt="" data-position="center center" width="100%"/>
+    <div class="image" style="margin-bottom=1000px;">
+        <img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-log.png" alt="" data-position="center center" width="100%" />
     </div>
-    <div class="row top-buffer1"></div>
             <p>This figure shows the same results as the previews one but now we have changed the Total # of deaths axis to a logaritmic scale. This generates a visual straigth line at the begining of the outbreak and it "bendsdown" as if surpases the inflexion point; this point correspond to the moment for wich the evolution or the growth starts to slowdown.</p>
 </div>
 
 <!-- Two -->
-<h4>Estimated end & the number of fatalities:</h4>
+<h4>Estimated end &amp; the number of fatalities:</h4>
 <div class="row">
   <div class="column">
-            <img src="{% link assets/images/daystoend.png %}" alt="" data-position="center center" width="100%"/>
+            <img src="/forty-jekyll-theme/assets/images/daystoend.png" alt="" data-position="center center" width="100%" />
             <p>Marginalised probability distribution on the number of estimated days to the end of the outbreak (the flat zone) i.e. when the number of deaths per day tends to zero. As we can see in the figure China was already surpased that point. Remember that the zero in this case corresponds to the last update and the highest point in the blub ditributions is the most likely number of days for the outbreak to finish.</p>
   </div>
   <div class="column">
-        <img src="{% link assets/images/fatalities.png %}" alt="" data-position="center center" width="100%"/>
+        <img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="100%" />
         <p>Marginalised probability distribution on the estimated number of deaths. The prediction for China agrees with the 3226 cases reported at 17/09/2020. These cases must be taken as a lower limit to the death estimate number. Any non-expected reburst of the curve will make increase the number of cases. An strict confinement of the population is therefore essential.</p>
   </div>
 </div>
-
 
 <section id="one">
     <div class="inner">
@@ -148,12 +138,11 @@ includeHTML();
     </script>
 </section>
 
-
 <!-- Two -->
 <section id="two" class="spotlights">
     <section>
         <div class="content">
-            <img width="350" src="{% link assets/images/pic08.jpg %}" alt="" data-position="center center" />
+            <img width="350" src="/forty-jekyll-theme/assets/images/pic08.jpg" alt="" data-position="center center" />
         </div>
         <div class="content">
             <div class="inner">
@@ -178,7 +167,6 @@ includeHTML();
     </section>
 </section>
 
-
 <div class="row top-buffer"></div>
 
 <section id="three">
@@ -189,7 +177,7 @@ includeHTML();
             </header>
         </div>
         <div id="logistic"></div>
-        <h3>Exponential & logistic growth</h3>
+        <h3>Exponential &amp; logistic growth</h3>
         <p>Exponential growth means that a given population will grow its size according to a growth rate. In the case of exponential growth this rate stays the same regardless of the population size, inducing the population to grow faster and faster as it gets larger, without an end.</p>
         <ul>
             <li>In nature, populations can only grow exponentially during some period, but inevitably the growth rate will ultimately be limited for example by the resource availability.</li>
@@ -204,10 +192,10 @@ includeHTML();
 
         <p>Population ecologists use a variety of mathematical methods to model population dynamics (how populations change in size and composition over time). Some of these models represent growth without environmental constraints, while others include "ceilings" determined by limited resources. Mathematical models of populations can be used to accurately describe changes occurring in a population and, importantly, to predict future changes.</p>    
 <div class="text-align">
-    <img src="{% link assets/images/cartoon_exp_log.png %}" alt="" width="950"/>
+    <img src="/forty-jekyll-theme/assets/images/cartoon_exp_log.png" alt="" width="950" />
     <p>*end of the <a href=" https://www.khanacademy.org/science/biology/ecology/population-growth-and-regulation/a/exponential-logistic-growth">khanacademy</a> citation*</p>
 </div>
-        <p>The figure above shows how the logistic and exponential models are constructed; to underestand them better you can watch the video  <a data-scroll href="#bazinga">"Exponential growth and epidemics"</a> bellow.</p> 
+        <p>The figure above shows how the logistic and exponential models are constructed; to underestand them better you can watch the video  <a data-scroll="" href="#bazinga">"Exponential growth and epidemics"</a> bellow.</p> 
         <p>After reading this text it should be obvious to us that the growth of the virus cannot be exponential indefinitely but it has to flatten at some point. One of these functions is the logistic model, used here to predict the number of deaths. </p>
         <h3>The logistic function:</h3>
         <p>If we solve the equation on the right of the previous figure, we obtain the logistic function. A logistic function or logistic curve has common "S" shape, this type of curve is known as a sigmoid and its equation is as follows:</p>
@@ -242,7 +230,7 @@ includeHTML();
 
   </div>
   <div class="column" style="background-color:#2d3450;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Kas0tIxDvrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Kas0tIxDvrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
   </div>
 </div>
 
@@ -256,15 +244,15 @@ includeHTML();
     <p>Here we show the results of for the Bayesian analysis parameters. Our goal is to show the infered probability distributions over the model parametersof interest, the probabilities of models and the probability distributions over predicted data.</p>
     <p>This is a universal approach to fitting models to data. Have defined the generative model for the data, the likelihood function, and a prior distribution over the parameters.</p> 
     <p>The following figures show the results:</p>
-    <img src="{% link assets/images/parameters-c1-c2.png %}" alt="" data-position="center center" width="95%"/>
+    <img src="/forty-jekyll-theme/assets/images/parameters-c1-c2.png" alt="" data-position="center center" width="95%" />
     <p>In this figure we show the results obtained from the posterior i.e. the more likely scenarios given our current model. We show the results for the growth rate value in terms of the total number or deaths predicted by the logistic curves. Note that our estimates are consistent with a total number of deaths within [3000, 6000] for the all four countries.</p>
 </div>
 <div class="text-fixed-left">
-    <img src="{% link assets/images/parameters-c3-c1.png %}" alt="" data-position="center center" width="95%"/>
+    <img src="/forty-jekyll-theme/assets/images/parameters-c3-c1.png" alt="" data-position="center center" width="95%" />
     <p>In this figure we show the results obtained for the 'Inflexion day' in terms of the total growth rate; note that the end of the outbreak is simply the double of the 'Inflexion day'.</p>
 </div>
 <div class="text-fixed-left">
-    <img src="{% link assets/images/parameters-c3-c2.png %}" alt="" data-position="center center" width="95%"/>
+    <img src="/forty-jekyll-theme/assets/images/parameters-c3-c2.png" alt="" data-position="center center" width="95%" />
     <p>Figure for the 'Total number of deaths' and the 'Inflexion day'.</p>
 </div>
 <div style="overflow: auto; width:100%;">
@@ -285,7 +273,7 @@ includeHTML();
 
   </div>
   <div class="column" style="background-color:#2d3450;">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R13BD8qKeTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R13BD8qKeTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
   </div>
 </div>
 
@@ -299,19 +287,20 @@ includeHTML();
 <div class="text-fixed-left">
     <p>....</p> 
     <p>The following figures show the results:</p>
-    <img src="{% link assets/images/Growth-China.png %}" alt="" data-position="center center" width="95%"/>
+    <img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="95%"/>
     <p>.............................................................................</p>
 </div>
 <div class="text-fixed-left">
-    <img src="{% link assets/images/Growth-Iran.png %}" alt="" data-position="center center" width="95%"/>
+    <img src="/forty-jekyll-theme/assets/images/Growth-Iran.png" alt="" data-position="center center" width="95%"/>
     <p>.............................................................................</p>
 </div>
 <div class="text-fixed-left">
-    <img src="{% link assets/images/Growth-Italy.png %}" alt="" data-position="center center" width="95%"/>
+    <img src="/forty-jekyll-theme/assets/images/Growth-Italy.png" alt="" data-position="center center" width="95%"/>
     <p>.............................................................................</p>
 </div>
 <div class="text-fixed-left">
-    <img src="{% link assets/images/Growth-Spain.png %}" alt="" data-position="center center" width="95%"/>
+    <img src="/forty-jekyll-theme/assets/images/Growth-Spain.png" alt="" data-position="center center" width="95%"/>
     <p>.............................................................................</p>
 </div>
 <div class="row top-buffer"></div> -->
+:ET

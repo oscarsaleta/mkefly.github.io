@@ -1,4 +1,4 @@
-I"aI<script type="text/x-mathjax-config">
+I"½I<script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 
@@ -37,6 +37,7 @@ function includeHTML() {
 
 <style>
 .top-buffer { margin-top:100px; }
+.top-buffer1 { margin-top:20px; }
 .text-fixed-right { width: 50%; min-width: 350px; float:right;}
 .text-fixed-left { width: 50%; min-width: 350px; padding-right: 20px; float:left}
  .grid {
@@ -105,12 +106,14 @@ includeHTML();
 <div id="main">
     <div class="image">
         <img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-linear.png" alt="" data-position="center center" width="100%" />
-<p>In this figure we compare the current number of COVID-19 fatalities to date shown as color dots, with the multiple projections drawn from the posterior predictive distribution; this projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We provide estimates for countries with more than 300 deaths. We have have defined time zero for each country to the day they anounced their first fatality record. The vertical grid lines represent important events that may have affected the growing rate as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll="" href="#logistic">logistic model</a> and predict the # fatalities (N) for each country analysed here.</p>
     </div>
+        <div class="row top-buffer1"></div>
+<p>In this figure we compare the current number of COVID-19 fatalities to date shown as color dots, with the multiple projections drawn from the posterior predictive distribution; this projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We provide estimates for countries with more than 300 deaths. We have have defined time zero for each country to the day they anounced their first fatality record. The vertical grid lines represent important events that may have affected the growing rate as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll="" href="#logistic">logistic model</a> and predict the # fatalities (N) for each country analysed here.</p>
     <div class="image">
         <img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-log.png" alt="" data-position="center center" width="100%" />
-        <p>This figure shows the same results as the previews one but now we have changed the Total # of deaths axis to a logaritmic scale. This generates a visual straigth line at the begining of the outbreak and it "bendsdown" as if surpases the inflexion point; this point correspond to the moment for wich the evolution or the growth starts to slowdown.</p>
     </div>
+    <div class="row top-buffer1"></div>
+            <p>This figure shows the same results as the previews one but now we have changed the Total # of deaths axis to a logaritmic scale. This generates a visual straigth line at the begining of the outbreak and it "bendsdown" as if surpases the inflexion point; this point correspond to the moment for wich the evolution or the growth starts to slowdown.</p>
 </div>
 
 <!-- Two -->
@@ -185,7 +188,6 @@ includeHTML();
             <li>Exponential growth produces a J-shaped curve, while logistic growth produces an S-shaped curve.</li>
             <li>When we read about bending the curve we are talking about using a logaritmic scale to plot the data, in that case that J-shaped curve becomes a strait line. The moment when this straight line bends downwards we start seeing the limiting factors and we are at close to the center of the S-shaped curve, that in this case looks like an inverse J-shape. (Remember this is only a matter of how the data is plotted or shown, it does not affect the data it self).</li>
         </ul>        
-        <h5>Introduction</h5>
         <h5>*Text from: <a href=" https://www.khanacademy.org/science/biology/ecology/population-growth-and-regulation/a/exponential-logistic-growth">khanacademy</a>*</h5> 
         <p>In theory, any kind of organism could take over the Earth just by reproducing. For instance, imagine that we started with a single pair of male and female rabbits. If these rabbits and their descendants reproduced at top speed ("like bunnies") for 777 years, without any deaths, we would have enough rabbits to cover the entire state of Rhode Island start superscript, 1, comma, 2, comma, 3, end superscript. And that's not even so impressive â€“ if we used E. coli bacteria instead, we could start with just one bacterium and have enough bacteria to cover the Earth with a 111-foot layer in just 36 hours!</p>
 
