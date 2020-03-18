@@ -114,12 +114,12 @@ includeHTML();
         <img src="{% link assets/images/Sigmoid-simulation-linear.png %}" alt="" data-position="center center" width="100%"/>
     </div>
         <div class="row top-buffer1"></div>
-<p>In this figure we compare the current number of COVID-19 fatalities to date shown as color dots, with the multiple projections drawn from the posterior predictive distribution; this projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We have have defined time zero for each country to the day they anounced their first fatality record. The vertical grid lines represent important events that may have affected the growing rate as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll href="#logistic">logistic model</a> and predict the # fatalities (N) for each country analysed here.</p>
+<p>In this figure we compare the current number of COVID-19 fatalities to date shown with color dots, with the multiple projections drawn from the posterior predictive distribution; this projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We have defined the zeroth time for each country to the day they anounced their first fatality record. The vertical grid lines represent important events that may have affected the growing rate as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll href="#logistic">logistic model</a> and predict the # fatalities (N) for each country analysed here.</p>
     <div class="image">
         <img src="{% link assets/images/Sigmoid-simulation-log.png %}" alt="" data-position="center center" width="100%"/>
     </div>
     <div class="row top-buffer1"></div>
-            <p>This figure shows the same results as the previews one but now we have changed the Total # of deaths axis to a logaritmic scale. This generates a visual straigth line at the begining of the outbreak and it "bendsdown" as if surpases the inflexion point; this point correspond to the moment for wich the evolution or the growth starts to slowdown.</p>
+            <p>This figure shows the same results as the preview one but now we have changed the Total # of deaths axis to a logaritmic scale. This generates a visual straigth line at the begining of the outbreak and it "bendsdown" as if surpases the inflexion point; this point correspond to the moment for wich the evolution or the growth starts to slowdown. Note that our estimates are consistent with a total number of deaths within [2000, 6000] for the all four countries. This estimates could depend on any relaxation of the measures each country makes.</p>
 </div>
 
 <!-- Two -->
@@ -127,7 +127,7 @@ includeHTML();
 <div class="row">
   <div class="column">
             <img src="{% link assets/images/daystoend.png %}" alt="" data-position="center center" width="100%"/>
-            <p>Marginalised probability distribution on the number of estimated the end of the outbreak's date, when a country arrives to the flat zone i.e. when the number of deaths per day tends to zero. As we can see in the figure China was already surpased that point. Remember that the zero in this case corresponds to the last update and the highest point in the blub ditributions is the most likely date for the outbreak to finish.</p>
+            <p>Marginalised probability distribution on the number of estimated the end of the outbreak's date, when a country arrives to the flat zone i.e. when the number of deaths per day tends to zero. As we can see in the figure China was already surpased that point. Remember that the zero in this case corresponds to the last update and the highest point in the bulb of the distributions is the most likely date for the outbreak to finish.</p>
   </div>
   <div class="column">
         <img src="{% link assets/images/fatalities.png %}" alt="" data-position="center center" width="100%"/>
@@ -140,7 +140,7 @@ includeHTML();
     <div class="inner">
         <h3>The Data:</h3>
     </div>
-    <p>On the table bellow we show the COVID-19 data collected for the set of countries with at list one fatality case. We show the number of deaths in each country (# of deaths), the number of days since the first official report of death (# days), the growth rate that reflects the percentual increase of the deaths in that day i.e. (Today-Yesterday)/Yesterday  x 100 and the growth factor we will discuss more about it in a future section. Finally the growth factor (GF) is represented as (Today-Yesterday)/(Yesterday-Day before) i.e. the quotient of todays and yesterdays derivatives.</p>
+    <p>On the table bellow we show the COVID-19 data collected for the set of countries with at list one case of fatality. We show the number of deaths in each country (# of deaths), the number of days since the first official report of death (# days), the growth rate that reflects the percentual increase of the deaths in that day i.e. (Today-Yesterday)/Yesterday  x 100 and the growth factor we will discuss more about it in a future section. Finally the growth factor (GF) is represented as (Today-Yesterday)/(Yesterday-Day before) i.e. the quotient of todays and yesterdays derivatives.</p>
     <div class="row top-buffer"></div>
     <div w3-include-html="./assets/tables/tabledata.html"></div>
     <script>
@@ -210,17 +210,17 @@ includeHTML();
         <p>The figure above shows how the logistic and exponential models are constructed; to underestand them better you can watch the video  <a data-scroll href="#bazinga">"Exponential growth and epidemics"</a> bellow.</p> 
         <p>After reading this text it should be obvious to us that the growth of the virus cannot be exponential indefinitely but it has to flatten at some point. One of these functions is the logistic model, used here to predict the number of deaths. </p>
         <h3>The logistic function:</h3>
-        <p>If we solve the equation on the right of the previous figure, we obtain the logistic function. A logistic function or logistic curve has common "S" shape, this type of curve is known as a sigmoid and its equation is as follows:</p>
+        <p>If we solve the equation on the right of the previous figure, we obtain the logistic function. A logistic function or logistic curve is S-shaped. This type of curve is known as a sigmoid and its equation is as follows:</p>
         $$N(t) = \frac{K}{1 + e^{-r(t-t_0)}}.$$
         <ul> 
             <li> $e$ = the natural logarithm base (also known as Euler's number),</li>
-            <li> $t_0$ = the $t$-value of the sigmoid where the rate starts to decrease, the midpoint of its evolutio and the 'inflexion point' of the sigmoid's curve.</li>
+            <li> $t_0$ = the $t$-value of the sigmoid where the rate starts to decrease, the midpoint of its evolution and the 'inflexion point' of the sigmoid's curve.</li>
             <li> $K$ =the curve's maximum value; in this case the maximum number of deaths.</li>
             <li> $r$ = the logistic growth rate or steepness of the curve</li>
         </ul>   
         <h3>Simulating possible future scenarios:</h3>
-        <p>The logistic model defined above and a non negative binomial distribution as a prior, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
-        <p>In short the figures shows, that given the data and our model, what is expect to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>   
+        <p>The logistic model defined above and a non negative binomial distribution as likelihood, to obtain the posterior predictive distribution of our model; from which we will sample to generate new data based on our estimated posteriors. (Please do not get disturbed by this, if you want to have a rough idea of the concep behind all this go lower to the video title "The Bayesian Trap" by Veritasium).</p>
+        <p>The figures shows, considering these dataset and our model, the predicted evolution of the curves that is expected to be observe. Note that the predictions have the uncertainty into account. Meaning that in the cases where few data points are availeble the uncertainty grows i.e. the spam of the predictions.</p>   
         In short, the figures we shows that given the data and our model, what evolutions are expect to be observe. Note that the predictions have the uncertainty into account. This implies that for the cases where few data points are available this uncertainty grows.     
     </section>
 </section>
@@ -253,11 +253,11 @@ includeHTML();
     </header>
 </div>
 <div class="text-fixed-left">
-    <p>Here we show the results of for the Bayesian analysis parameters. Our goal is to show the infered probability distributions over the model parametersof interest, the probabilities of models and the probability distributions over predicted data.</p>
-    <p>This is a universal approach to fitting models to data. Have defined the generative model for the data, the likelihood function, and a prior distribution over the parameters.</p> 
+    <p>Here we show the results of the Bayesian inference parameter estimation. Our goal is to show the infered probability distributions over the model parametersof interest, the probabilities of models and the probability distributions over predicted data.</p>
+    <p>This is a universal approach for fitting models to data. Have defined the generative model for the data, the likelihood function, and a prior distribution over the parameters.</p> 
     <p>The following figures show the results:</p>
     <img src="{% link assets/images/parameters-c1-c2.png %}" alt="" data-position="center center" width="95%"/>
-    <p>In this figure we show the results obtained from the posterior i.e. the more likely scenarios given our current model. We show the results for the growth rate value in terms of the total number or deaths predicted by the logistic curves. Note that our estimates are consistent with a total number of deaths within [3000, 6000] for the all four countries.</p>
+    <p>In this figure we show the results obtained from the posterior i.e. the most likely scenarios given our current model. We show the results for the growth rate value in terms of the total number or deaths predicted by the logistic curves. For all the countries.</p>
 </div>
 <div class="text-fixed-left">
     <img src="{% link assets/images/parameters-c3-c1.png %}" alt="" data-position="center center" width="95%"/>
