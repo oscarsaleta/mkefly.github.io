@@ -127,7 +127,7 @@ includeHTML();
 <div class="row">
   <div class="column">
             <img src="{% link assets/images/daystoend.png %}" alt="" data-position="center center" width="100%"/>
-            <p>Marginalised probability distribution on the number of estimated days to the end of the outbreak (the flat zone) i.e. when the number of deaths per day tends to zero. As we can see in the figure China was already surpased that point. Remember that the zero in this case corresponds to the last update and the highest point in the blub ditributions is the most likely number of days for the outbreak to finish.</p>
+            <p>Marginalised probability distribution on the number of estimated the end of the outbreak's date, when a country arrives to the flat zone i.e. when the number of deaths per day tends to zero. As we can see in the figure China was already surpased that point. Remember that the zero in this case corresponds to the last update and the highest point in the blub ditributions is the most likely date for the outbreak to finish.</p>
   </div>
   <div class="column">
         <img src="{% link assets/images/fatalities.png %}" alt="" data-position="center center" width="100%"/>
