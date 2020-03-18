@@ -7,6 +7,10 @@ image: null
 author: 'Miquel Oliver & Xisco Jimenez Forteza'
 show_tile: true
 ---  
+
+<div w3-include-html="./assets/tables/last_update.html"></div>
+
+ 
 <!-- Main -->
 <div id="main">
     <div class="image">
